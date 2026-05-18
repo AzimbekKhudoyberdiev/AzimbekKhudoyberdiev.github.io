@@ -473,14 +473,23 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h3>Let’s discuss robust localization, smart transportation, and applied AI systems.</h3>
-          <p>Email is the best public contact method. Do not publish your private phone number on the website unless necessary.</p>
+          <p class="contact-note">Send a short message by email. The form opens your mail app with the message details.</p>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:azimbek.khudoyberdiev@stonybrook.edu">azimbek.khudoyberdiev@stonybrook.edu</a>
-          <a class="button" href="https://scholar.google.com/citations?user=FDHRJzgAAAAJ" rel="noopener">Google Scholar</a>
-          <a class="button" href="https://www.linkedin.com/in/azimbek-khudoyberdiev-378966178/" rel="noopener">LinkedIn</a>
-          <a class="button" href="https://github.com/AzimbekKhudoyberdiev" rel="noopener">GitHub</a>
-        </div>
+        <form class="contact-form" action="mailto:azimbek.khudoyberdiev@stonybrook.edu" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send</button>
+        </form>
       </div>
     </section>
   </main>
