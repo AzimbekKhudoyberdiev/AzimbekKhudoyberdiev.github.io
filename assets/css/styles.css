@@ -248,7 +248,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.015em; }
   display: grid;
   gap: 1rem;
 }
-.news-grid { grid-template-columns: repeat(4, 1fr); }
+.news-grid { grid-template-columns: repeat(2, 1fr); }
 .news-card, .research-card, .project-card, .teaching-card, .skill-group, .notice-card, .patent-card, .contact-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -256,6 +256,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.015em; }
   box-shadow: 0 18px 50px rgba(18, 31, 56, .06);
 }
 .news-card { padding: 1.2rem; }
+.news-card-major { grid-column: span 2; border-color: rgba(31, 111, 235, .4); background: linear-gradient(135deg, rgba(31,111,235,.10), rgba(0,163,163,.07)), var(--surface); }
 .news-card time { display: inline-block; color: var(--brand-2); font-weight: 850; margin-bottom: .55rem; }
 .news-card p, .research-card p, .project-body p, .teaching-card p, .skill-group p, .notice-card p, .patent-card p, .contact-card p { color: var(--muted); }
 .research-grid { grid-template-columns: repeat(4, 1fr); }
@@ -525,6 +526,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.015em; }
   .hero { padding-top: 70px; }
   .split-heading { align-items: start; flex-direction: column; }
   .news-grid, .research-grid, .project-grid, .teaching-grid, .skills-grid { grid-template-columns: 1fr; }
+  .news-card-major { grid-column: span 1; }
   .timeline { grid-template-columns: 1fr; }
   .patent-meta, .patent-figures { grid-template-columns: 1fr; }
   h1 { font-size: clamp(2.35rem, 12vw, 4rem); }

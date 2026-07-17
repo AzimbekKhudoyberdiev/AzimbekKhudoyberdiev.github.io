@@ -4,7 +4,7 @@ This is a static GitHub Pages website designed for an academic/research portfoli
 
 ## What is included
 
-- `index.html` — homepage with hero section, news, research agenda, projects, publications, teaching, skills, patents, and contact.
+- `index.html` — homepage with biography, news, projects, publications, experience, teaching, skills, patents, and contact.
 - `projects/` — individual pages for GFlowLoc, PLUS-CODE+, CLOUD-CODEC, CogniMoE, MirrorVision, and Smart Farming/IoT.
 - `assets/css/styles.css` — full responsive design with dark mode.
 - `assets/js/main.js` — mobile navigation, dark mode toggle, publication filters.
@@ -59,5 +59,12 @@ If you purchase a domain, create a `CNAME` file in the repository root containin
 ```text
 azimbek.dev
 ```
+
+After future edits:
+
+git add .
+git commit -m "Update biography"
+git push
+
 
 Then configure the domain in **Settings → Pages** and verify it in your GitHub account settings.
