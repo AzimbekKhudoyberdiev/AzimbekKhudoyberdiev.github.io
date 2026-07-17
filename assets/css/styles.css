@@ -258,6 +258,8 @@ h3 { font-size: 1.15rem; letter-spacing: -.015em; }
 .news-list li { margin: .45rem 0; padding-left: .2rem; color: var(--muted); }
 .news-list li::marker { color: var(--brand-2); }
 .news-list strong { color: var(--text); }
+.news-list a { color: var(--brand); font-weight: 700; }
+.news-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .research-card p, .project-body p, .teaching-card p, .skill-group p, .notice-card p, .patent-card p, .contact-card p { color: var(--muted); }
 .research-grid { grid-template-columns: repeat(4, 1fr); }
 .research-card { padding: 1.35rem; }
